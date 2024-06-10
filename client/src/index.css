@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+:root {
+    --primary: #3b82f6;
+    --secondary: #37d279;
+    --tertiary: #ffbe46;
+    --bg-1: #f9f9fe;
+    --bg-2: #f5f5fe;
+    --btn-bg: #efeffd;
+    --border: #c2c7d0;
+    --neutral-700: #243757;
+    --primary-light: #ececfd;
+    --secondary-light: #eafbf1;
+    --secondary-500: #22804a;
+    --dark: #091e42;
+}
+
+.btn-outline {
+    border-width: 1px;
+    border-color: var(--primary);
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition-duration: .3s;
+}
+
+.btn-outline {
+    padding: 0.75rem 1.5rem;
+}
+
+.btn, .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 30px;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.bg-\[var\(--bg-1\)\] {
+    background-color: var(--bg-1);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00000075;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* -----Root CSS Variable------ */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----CSS Global----- */
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* -----Wrapper------- */
+
+.wrapper {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ------- Card Slider ---------- */
+
+#cards {
+    padding: 45px 0;
+}
+
+.swiper {
+    padding-top: 30px;
+}
+
+.card-content {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-content img {
+    border-radius: 0.5rem;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    background-color: rgba(16, 16, 16, .5);
+    transition: .5s;
+    transform: scale(1.15);
+    opacity: 0;
+}
+
+.card-content:hover .img-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-title {
+    width: 100%;
+    position: absolute;
+    bottom: -45px;
+    padding: 50px 30px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.card-content:hover .card-title {
+    bottom: 30%;
+    opacity: 1;
+}
+
+.card-title h4 {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.card-title p {
+    color: #FFF;
+}
+
+/* ----- Swiper arrow and pagination --------- */
+
+.arrow {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.prevArrowBtn,
+.nextArrowBtn {
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    background-color: transparent;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextArrowBtn {
+    margin-left: 10px;
+}
+
+/* ---- Styling swiper bullets ----- */
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 10%;
+    display: flex;
+    position: static;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 20%;
+    height: 5px;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3b82f6;
+}
+
+.swiper-pagination-bullet:hover {
+    background-color: #3b82f6;
+    opacity: 1;
+    outline: none;
+}
+
+.section-bg1 {
+    background: rgba(218, 233, 245, 0.5);
+  }
+
+  .layover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000075;
+  }
+  .transition {
+    transition: 0.5s ease;
+  }
+  .heading-title {
+    color: #222;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
